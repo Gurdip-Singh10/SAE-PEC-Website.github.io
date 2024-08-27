@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         showSlide(slideIndex);
-        setInterval(autoSlide, 7000);
+        setInterval(autoSlide, 5000);
     }
 
     // Additional code for hamburger menu

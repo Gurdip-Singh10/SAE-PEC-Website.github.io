@@ -70,6 +70,7 @@ section h2 {
 section p {
     line-height: 1.6;
     align-items: justify;
+    text-align: justify;
 }
 
 section img {
@@ -85,6 +86,21 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Add this to your existing CSS file or create a new one */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+#about {
+    text-align: center; /* Center the text */
+}
+
+.highlight-text {
+    font-family: 'Permanent Marker', cursive; /* Unique font style */
+    font-size: 4.5vw; /* Large text size */
+    color: #f05635; /* Font color */
+    margin-top: 20px; /* Space above the text */
+}
+
 
 
 /*For Mobile*/
@@ -223,4 +239,35 @@ nav ul {
         text-align: center; /* Center the text in the navigation pane */
         text-decoration: none;
     }
+}
+
+
+/* Connect With Us */
+#social-media {
+    text-align: center;
+    margin: 20px auto; /* Center the section itself */
+    padding: 20px; /* Add padding for better spacing */
+    max-width: 800px; /* Limit width for better alignment */
+}
+
+#social-media h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icon {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Keep the size proportional */
+    object-fit: contain; /* Ensure the icon fits well */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Enlarge icon slightly on hover */
 }
